@@ -12,6 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 127ce6ddad81795489982c1a58605035, type: 3}
   m_Name: Question 4
   m_EditorClassIdentifier: 
-  question: "Musculus stapedius ve musculus tensor tympani\u2019ye\r etki ederek
-    i\u015Fitmede etkili olan sinirler\r a\u015Fa\u011F\u0131dakilerden hangisinde
-    birlikte verilmi\u015Ftir?"
+  question: "Musculus stapedius ve musculus tensor tympani\u2019ye etki ederek i\u015Fitmede
+    etkili olan sinirler a\u015Fa\u011F\u0131dakilerden hangisinde birlikte verilmi\u015Ftir?"
+  answers:
+  - 
+  - 
+  - 
+  - 
+  - 
+  correctAnswerIndex: 0

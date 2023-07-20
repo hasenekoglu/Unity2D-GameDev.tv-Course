@@ -13,7 +13,14 @@ MonoBehaviour:
   m_Name: Question 1
   m_EditorClassIdentifier: 
   question: "I. Arteria cerebelli superior\u2019un dal\u0131d\u0131r.\r\nII. 8. kafa
-    \xE7ifti ile birlikte meatus acusticus\r internus\u2019tan ge\xE7er.\r\nIII.
-    Auris interna\u2019y\u0131 kanland\u0131r\u0131r.\r\nIV. Beyin taban\u0131nda
-    7. kafa \xE7ifti ile kom\u015Fulu\u011Fu\r vard\u0131r.\r\nArteria labyrinthi
-    ile ilgili yukar\u0131daki ifadelerden\r hangileri do\u011Frudur?"
+    \xE7ifti ile birlikte meatus acusticus internus\u2019tan ge\xE7er.\r\nIII. Auris
+    interna\u2019y\u0131 kanland\u0131r\u0131r.\r\nIV. Beyin taban\u0131nda 7. kafa
+    \xE7ifti ile kom\u015Fulu\u011Fu vard\u0131r.\r\n\nArteria labyrinthi ile ilgili
+    yukar\u0131daki ifadelerden hangileri do\u011Frudur?"
+  answers:
+  - 
+  - 
+  - 
+  - 
+  - 
+  correctAnswerIndex: 0

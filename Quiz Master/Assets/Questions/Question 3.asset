@@ -13,6 +13,14 @@ MonoBehaviour:
   m_Name: Question 3
   m_EditorClassIdentifier: 
   question: "Solunum s\u0131k\u0131nt\u0131s\u0131 \u015Fik\xE2yetiyle ba\u015Fvuran
-    bir hastan\u0131n\r toraks g\xF6r\xFCnt\xFClenmesinde bifurcatio tracheae\u2019nin
-    alt\r kom\u015Fulu\u011Fundaki lenf nod\xFClleri taraf\u0131ndan bas\u0131 alt\u0131nda\r
-    oldu\u011Fu izleniyor.\r\nBu hastada izlenen nod\xFCller a\u015Fa\u011F\u0131dakilerden\r\nhangisidir?\r"
+    bir hastan\u0131n  toraks g\xF6r\xFCnt\xFClenmesinde bifurcatio tracheae\u2019nin
+    alt kom\u015Fulu\u011Fundaki lenf nod\xFClleri taraf\u0131ndan bas\u0131 alt\u0131nda
+    oldu\u011Fu izleniyor.\r\n\r\nBu hastada izlenen nod\xFCller a\u015Fa\u011F\u0131dakilerden
+    hangisidir?\r\n"
+  answers:
+  - 
+  - 
+  - 
+  - 
+  - 
+  correctAnswerIndex: 0
