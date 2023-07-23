@@ -4,15 +4,53 @@ using UnityEngine;
 
 public class Timer : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+  [SerializeField] float timeToCompleteQuestion = 30f;
+  [SerializeField] float timeToShowCorrectAnswer = 30f;
+  public bool loadNextQuestion;
+  public bool isAnswerQuestion = false;
+  public float fillFraction;
+  float timerValue;
+  void Update()
+  {
+    UpdateTimer();
+  }
+
+  public void CancelTimer()
+  {
+    timerValue = 0;
+
+  }
+  void UpdateTimer()
+  {
+    timerValue -= Time.deltaTime;
+    if (isAnswerQuestion)
     {
-        
+      if (timerValue > 0)
+      {
+        fillFraction = timerValue / timeToCompleteQuestion;
+      }
+      else
+      {
+        isAnswerQuestion = false;
+        timerValue = timeToCompleteQuestion;
+      }
+    }
+    else
+    {
+
+      if (timerValue > 0)
+      {
+        fillFraction = timerValue / timeToShowCorrectAnswer;
+      }
+      else
+      {
+        isAnswerQuestion = true;
+        timerValue = timeToCompleteQuestion;
+        loadNextQuestion = true;
+      }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
+    Debug.Log(isAnswerQuestion + ":" + timerValue + ":" + fillFraction);
+  }
 }

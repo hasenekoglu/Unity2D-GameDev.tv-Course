@@ -241,7 +241,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questionText: {fileID: 1059875511}
-  question: {fileID: 11400000, guid: 67bd53435d976664684c12f5dd3f3d76, type: 2}
+  questions:
+  - {fileID: 11400000, guid: 67bd53435d976664684c12f5dd3f3d76, type: 2}
+  - {fileID: 11400000, guid: 8d449ac7d3c82234a923b2a551a53068, type: 2}
+  - {fileID: 11400000, guid: 897b752794c86754a83d06aaac14aa1f, type: 2}
+  - {fileID: 11400000, guid: 35940b24ca887b34eb7e23a3a01899c1, type: 2}
+  - {fileID: 11400000, guid: 4328fa00ca7163d4c880ef30e1f32f5d, type: 2}
+  currentQuestion: {fileID: 0}
   answerButtons:
   - {fileID: 444431442}
   - {fileID: 1755349233}
@@ -251,6 +257,7 @@ MonoBehaviour:
   defaultAnswerSprite: {fileID: 21300000, guid: b2babe0fe7e527444818db4839f4cfb4, type: 3}
   correctAnswerSprite: {fileID: 21300000, guid: bfcff7348e1c16a4aaab5038f6131c0f, type: 3}
   inCorretAnswerSprite: {fileID: 21300000, guid: 4ff11d4d7db6fc944894999b52920959, type: 3}
+  timerImage: {fileID: 1636111024}
 --- !u!1001 &140059390
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -778,6 +785,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76bfedeb5ebbc4444b0b06200693cea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeToCompleteQuestion: 10
+  timeToShowCorrectAnswer: 5
+  loadNextQuestion: 0
+  isAnswerQuestion: 0
+  fillFraction: 0
 --- !u!1 &1059875509
 GameObject:
   m_ObjectHideFlags: 0
