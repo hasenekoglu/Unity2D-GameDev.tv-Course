@@ -116,6 +116,7 @@ public class Quiz : MonoBehaviour
     {
       SetButtonState(true);
       SetDefaultButtonSprite();
+      SetDefaultButtonSprite();
       GetRandomQuestion();
       DisplayQuestion();
       progressBar.value++;
