@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -13,12 +14,12 @@ TagManager:
   - UI
   - Ground
   - Climbing
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Player
+  - Background
+  - Bouncing
+  - Enemies
+  - Bullets
+  - Interactables
   - 
   - 
   - 
@@ -50,8 +51,17 @@ TagManager:
   - name: Platforms
     uniqueID: 2835727215
     locked: 0
+  - name: Trap
+    uniqueID: 877836513
+    locked: 0
   - name: Climbing
     uniqueID: 351191831
+    locked: 0
+  - name: Interactables
+    uniqueID: 2424637149
+    locked: 0
+  - name: Enemies
+    uniqueID: 93357495
     locked: 0
   - name: Player
     uniqueID: 2446094237
