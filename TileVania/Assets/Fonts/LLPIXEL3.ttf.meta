@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: af29f8f0b87d03045b6dadee0ef04ed4
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - LLPixel
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: e1459af9bc975c646acfb56a9f734fbf, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -12,6 +12,12 @@ public class PlayerMovementScript : MonoBehaviour
   [SerializeField] float climbSpeed = 5;
   [SerializeField] GameObject bullet;
   [SerializeField] Transform gun;
+  [SerializeField] float gameSoundVolume = .4f;
+
+  [SerializeField] AudioClip bulletSFX;
+  [SerializeField] AudioClip dieSFX;
+  [SerializeField] AudioSource gameSound;
+
 
   Vector2 moveInput;
   Rigidbody2D myRigidbody;
@@ -26,17 +32,24 @@ public class PlayerMovementScript : MonoBehaviour
 
   void Start()
   {
+    gameSound = GetComponent<AudioSource>();
+
+    gameSound.Play();
+    gameSound.volume = gameSoundVolume;
     myRigidbody = GetComponent<Rigidbody2D>();
     myAnimator = GetComponent<Animator>();
     myBodyCollider = GetComponent<CapsuleCollider2D>();
     myFeetCollider = GetComponent<BoxCollider2D>();
     gravityScaleAtStart = myRigidbody.gravityScale;
 
+
   }
 
 
   void Update()
   {
+
+
     if (!isAlive) { return; }
     Run();
     FlipSprite();
@@ -47,6 +60,9 @@ public class PlayerMovementScript : MonoBehaviour
   void OnFire(InputValue value)
   {
     if (!isAlive) { return; }
+    GetComponent<AudioSource>().PlayOneShot(bulletSFX);
+
+
     Instantiate(bullet, gun.position, transform.rotation);
   }
   private void FlipSprite()
@@ -113,22 +129,17 @@ public class PlayerMovementScript : MonoBehaviour
   {
     if (myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Enemies", "Water")))
     {
+      GetComponent<AudioSource>().PlayOneShot(dieSFX);
       isAlive = false;
       myAnimator.SetTrigger("Dying");
       myRigidbody.velocity += new Vector2(0f, jumpSpeed);
-      StartCoroutine(ReloadScene());
+      FindObjectOfType<GameSession>().ProcessPlayerDeath();
 
     }
   }
 
 
 
-  IEnumerator ReloadScene()
-  {
-    int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-    yield return new WaitForSecondsRealtime(1);
-    SceneManager.LoadScene(currentSceneIndex);
-  }
 
 
 }

@@ -6,19 +6,40 @@ using UnityEngine.SceneManagement;
 
 public class LevelExit : MonoBehaviour
 {
+    //[SerializeField] AudioClip checkPointSFX;
 
-    [SerializeField] float loadSceneTime = 0f;
 
     void OnTriggerEnter2D(Collider2D other)
     {
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        int nextSceneIndex = currentSceneIndex + 1;
+        if (other.tag == "Player")
 
-        if (nextSceneIndex == SceneManager.sceneCountInBuildSettings)
         {
-            nextSceneIndex = 0;
+
+            // GetComponent<AudioSource>().PlayOneShot(checkPointSFX);
+            // StartCoroutine(SceneDelay());
+            int nextSceneIndex = currentSceneIndex + 1;
+            if (nextSceneIndex == SceneManager.sceneCountInBuildSettings)
+            {
+                nextSceneIndex = 0;
+            }
+            FindObjectOfType<ScenePersist>().ResetScenePersist();
+            SceneManager.LoadScene(nextSceneIndex);
+
         }
-        SceneManager.LoadScene(nextSceneIndex);
+        IEnumerator SceneDelay()
+        {
+            yield return new WaitForSecondsRealtime(.5f);
+        }
+
+
+
+
+
+
+
+
+
 
         // StartCoroutine(LoadNextLevel()); ;
     }
