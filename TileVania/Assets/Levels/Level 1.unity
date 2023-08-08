@@ -38344,6 +38344,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7161083374428742419, guid: 9f72596e406fbcf46818b54844236b61, type: 3}
   m_PrefabInstance: {fileID: 7161083373028414394}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &1402900499 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 965918402901854987, guid: 94aa48d54d5fe9142838a046e7fe963b, type: 3}
+  m_PrefabInstance: {fileID: 965918402882298339}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1403206756 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8431285106924673393, guid: cef255aacc4ccf9439047af96e09b0ec, type: 3}
@@ -38655,20 +38660,36 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 7805081421197745037, guid: b03e889aaf55aa64d8da849c0bd3a64f, type: 3}
+      propertyPath: m_AnimatedTarget
+      value: 
+      objectReference: {fileID: 1402900499}
+    - target: {fileID: 7805081421197745037, guid: b03e889aaf55aa64d8da849c0bd3a64f, type: 3}
+      propertyPath: m_ParentHash.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7805081421197745037, guid: b03e889aaf55aa64d8da849c0bd3a64f, type: 3}
       propertyPath: m_ChildCameras.Array.size
-      value: 0
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7805081421197745037, guid: b03e889aaf55aa64d8da849c0bd3a64f, type: 3}
+      propertyPath: m_ParentHash.Array.data[3].m_Hash
+      value: -1546996312
+      objectReference: {fileID: 0}
+    - target: {fileID: 7805081421197745037, guid: b03e889aaf55aa64d8da849c0bd3a64f, type: 3}
+      propertyPath: m_ParentHash.Array.data[3].m_ParentHash
+      value: 756556552
       objectReference: {fileID: 0}
     - target: {fileID: 7805081421852696392, guid: b03e889aaf55aa64d8da849c0bd3a64f, type: 3}
       propertyPath: orthographic size
-      value: 4.5
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 7805081421852696503, guid: b03e889aaf55aa64d8da849c0bd3a64f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -19.081171
+      value: -14.2041645
       objectReference: {fileID: 0}
     - target: {fileID: 7805081421852696503, guid: b03e889aaf55aa64d8da849c0bd3a64f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -15.504484
+      value: -13.504484
       objectReference: {fileID: 0}
     - target: {fileID: 7805081422064867600, guid: b03e889aaf55aa64d8da849c0bd3a64f, type: 3}
       propertyPath: m_BoundingShape2D

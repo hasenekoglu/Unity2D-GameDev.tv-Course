@@ -14631,7 +14631,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 4.5
+  orthographic size: 6.5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -15014,7 +15014,7 @@ MonoBehaviour:
   m_StandbyUpdate: 2
   m_LookAt: {fileID: 0}
   m_Follow: {fileID: 2143699581}
-  m_AnimatedTarget: {fileID: 0}
+  m_AnimatedTarget: {fileID: 1662556226}
   m_LayerIndex: 0
   m_ShowDebugText: 0
   m_ChildCameras:
@@ -15044,7 +15044,15 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
   m_CustomBlends: {fileID: 11400000, guid: 5d5ee489829711b43a09fc706bd65f8e, type: 2}
-  m_ParentHash: []
+  m_ParentHash:
+  - m_Hash: 1432961145
+    m_ParentHash: 756556552
+  - m_Hash: 256545655
+    m_ParentHash: 756556552
+  - m_Hash: -725336713
+    m_ParentHash: 756556552
+  - m_Hash: -1546996312
+    m_ParentHash: 756556552
 --- !u!1 &948994546
 GameObject:
   m_ObjectHideFlags: 0
@@ -39524,6 +39532,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94aa48d54d5fe9142838a046e7fe963b, type: 3}
+--- !u!95 &1662556226 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 965918402901854987, guid: 94aa48d54d5fe9142838a046e7fe963b, type: 3}
+  m_PrefabInstance: {fileID: 1662556225}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1667186212
 GameObject:
   m_ObjectHideFlags: 0
