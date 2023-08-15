@@ -17,14 +17,14 @@ public class LevelExit : MonoBehaviour
         {
 
             // GetComponent<AudioSource>().PlayOneShot(checkPointSFX);
-            // StartCoroutine(SceneDelay());
+            //StartCoroutine(SceneDelay());
             int nextSceneIndex = currentSceneIndex + 1;
             if (nextSceneIndex == SceneManager.sceneCountInBuildSettings)
             {
                 nextSceneIndex = 0;
             }
             FindObjectOfType<ScenePersist>().ResetScenePersist();
-            SceneManager.LoadScene(nextSceneIndex);
+            SceneManager.LoadScene(currentSceneIndex);
 
         }
         IEnumerator SceneDelay()
